@@ -140,4 +140,178 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Saira", sans-serif;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header .navbar {
+  z-index: 1000;
+  padding: 1rem;
+  width: 100vw;
+  max-width: 1600px;
+  background-color: #fff;
+}
+body header .navbar .navbar-brand {
+  color: #f69548;
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 992px) {
+  body header .navbar .navbar-brand {
+    margin-left: 0;
+    font-size: 1.8rem;
+  }
+}
+body header .navbar .navbar-toggler:focus {
+  color: #fff;
+}
+body header .navbar .navbar-collapse li {
+  line-height: 2rem;
+  text-align: center;
+}
+body header .navbar #navbarNav {
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+@media screen and (max-width: 992px) {
+  body header .navbar #navbarNav {
+    margin-right: 0;
+  }
+}
+body header .navbar #navbarNav li {
+  margin: 0 2rem;
+  font-size: 1.1rem;
+}
+body header .navbar #navbarNav li .nav-link {
+  color: #000;
+  transition: all 0.3s ease;
+}
+body header .navbar #navbarNav li .nav-link:hover {
+  color: #f69548;
+}
+
+body .hero {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 5rem);
+  overflow: hidden;
+  color: #fff;
+}
+body .hero .hero-images {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1600px;
+  height: calc(100vh - 5rem);
+  max-height: 1000px;
+}
+@media screen and (max-width: 768px) {
+  body .hero .hero-images {
+    flex-direction: column;
+  }
+}
+body .hero .hero-images .hero-image-container {
+  position: relative;
+  flex: 1 1 auto;
+  width: 25%;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  body .hero .hero-images .hero-image-container {
+    width: 100%;
+  }
+}
+body .hero .hero-images .hero-image-container .hero-image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: calc(100vh - 5rem);
+  transform: translate(-50%, 0%);
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  body .hero .hero-images .hero-image-container .hero-image {
+    width: 100vw;
+    top: -150%;
+  }
+}
+body .hero .hero-images .hero-image-container .hero-image img {
+  height: calc(100vh - 5rem);
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60vw;
+}
+@media screen and (max-width: 768px) {
+  body .hero .hero-images .hero-image-container .hero-image img {
+    width: 100vw;
+    height: 60vh;
+  }
+}
+body .hero .hero-images .hero-image-container .hero-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.5s ease;
+}
+body .hero .hero-images .hero-image-container .hero-image .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body .hero .hero-images .hero-image-container .hero-image .hero-text-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 5rem);
+  text-align: center;
+}
+body .hero .hero-images .hero-image-container .hero-image .hero-text-container h2 {
+  font-size: 2rem;
+  color: #fff;
+  z-index: 101;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  body .hero .hero-images .hero-image-container .hero-image .hero-text-container h2 {
+    font-size: 1.5rem;
+  }
+}
+body .hero .hero-images .hero-image-container .hero-image .hero-text-container h2:hover {
+  color: #f69548;
+}
+body .hero .hero-images .hero-image-container:hover {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  body .hero .hero-images .hero-image-container:hover {
+    height: 0%;
+  }
 }/*# sourceMappingURL=global.css.map */

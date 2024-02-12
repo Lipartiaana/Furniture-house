@@ -1,0 +1,67 @@
+body {
+  background-color: $white-color;
+  font-family: "Saira", sans-serif;
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navbar {
+      z-index: 1000;
+      padding: 1rem;
+      width: 100vw;
+      max-width: 1600px;
+      background-color: $white-color;
+
+      .navbar-brand {
+        color: $primary-color;
+        font-family: "Kalam", cursive;
+        font-size: 2rem;
+        font-weight: 900;
+        margin-left: 3rem;
+
+        @media screen and (max-width: 992px) {
+          margin-left: 0;
+          font-size: 1.8rem;
+        }
+      }
+
+      .navbar-toggler {
+        &:focus {
+          color: $white-color;
+        }
+      }
+
+      .navbar-collapse {
+        li {
+          line-height: 2rem;
+          text-align: center;
+        }
+      }
+
+      #navbarNav {
+        justify-content: flex-end;
+        margin-right: 3rem;
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0;
+        }
+
+        li {
+          margin: 0 2rem;
+          font-size: 1.1rem;
+
+          .nav-link {
+            color: $black-color;
+            transition: all 0.3s ease;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

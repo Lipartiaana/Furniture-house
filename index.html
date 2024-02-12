@@ -4,8 +4,111 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Furniture House</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/a117407e76.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Global css -->
     <link rel="stylesheet" href="./CSS/global.css" />
+    <!-- Scripts -->
     <script src="./JS/script.js"></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
+        <a class="navbar-brand" href="./index.html">Furniture House</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./HTML/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/projects.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-images">
+        <div class="hero-image-container">
+          <span class="hero-image"
+            ><img src="./Assets/hero-images/bedroom.jpg" alt="bedroom" />
+            <div class="overlay"></div>
+            <div class="hero-text-container">
+              <h2>Bedroom</h2>
+            </div></span
+          >
+        </div>
+        <div class="hero-image-container">
+          <span class="hero-image"
+            ><img src="./Assets/hero-images/office.jpg" alt="office" />
+            <div class="overlay"></div>
+            <div class="hero-text-container">
+              <h2>Office</h2>
+            </div></span
+          >
+        </div>
+        <div class="hero-image-container">
+          <span class="hero-image"
+            ><img
+              src="./Assets/hero-images/living-room.jpg"
+              alt="living room"
+            />
+            <div class="overlay"></div>
+            <div class="hero-text-container">
+              <h2>Living Room</h2>
+            </div></span
+          >
+        </div>
+        <div class="hero-image-container">
+          <span class="hero-image"
+            ><img src="./Assets/hero-images/kitchen.jpg" alt="kitchen" />
+            <div class="overlay"></div>
+            <div class="hero-text-container">
+              <h2>Kitchen</h2>
+            </div></span
+          >
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
