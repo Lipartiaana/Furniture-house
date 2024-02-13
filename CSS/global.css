@@ -152,6 +152,8 @@ body header {
   align-items: center;
 }
 body header .navbar {
+  position: absolute;
+  top: 0;
   z-index: 1000;
   padding: 1rem;
   width: 100vw;
@@ -198,15 +200,28 @@ body header .navbar #navbarNav li .nav-link {
 body header .navbar #navbarNav li .nav-link:hover {
   color: #f69548;
 }
+body .btn {
+  width: 11rem;
+  height: 3.5rem;
+  margin-top: 1rem;
+  background-color: #f69548;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all 0.5s ease-out;
+}
+body .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
 
 body .hero {
-  position: absolute;
+  position: relative;
   top: 5rem;
   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: calc(100vh - 5rem);
   overflow: hidden;
   color: #fff;
@@ -314,4 +329,177 @@ body .hero .hero-images .hero-image-container:hover {
   body .hero .hero-images .hero-image-container:hover {
     height: 0%;
   }
+}
+body .achievements {
+  position: absolute;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+  padding: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #ebe8e8;
+  width: 80%;
+  height: 8rem;
+  max-width: 1360px;
+  border-radius: 1rem;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  body .achievements {
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    height: 13rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .achievements {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 17rem;
+  }
+}
+body .achievements .achievement {
+  padding: 1rem;
+}
+@media screen and (max-width: 500px) {
+  body .achievements .achievement {
+    padding: 0.5rem;
+  }
+}
+body .achievements .achievement span {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
+body .achievements .achievement p {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  body .achievements .achievement p {
+    font-size: 1rem;
+  }
+}
+body .achievements hr {
+  transform: rotate(90deg);
+  width: 3rem;
+  background-color: #000;
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  body .achievements hr {
+    display: none;
+  }
+}
+body .about-main {
+  margin: 12rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1360px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media screen and (max-width: 992px) {
+  body .about-main {
+    margin: 15rem auto;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .about-main {
+    margin: 20rem auto;
+  }
+}
+body .about-main .text-side {
+  width: 50%;
+  padding: 1rem;
+}
+@media screen and (max-width: 992px) {
+  body .about-main .text-side {
+    width: 100%;
+  }
+}
+body .about-main .text-side h2 {
+  width: 10rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem;
+}
+body .about-main .text-side p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+body .about-main .icons-side {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  body .about-main .icons-side {
+    width: 100%;
+  }
+}
+body .about-main .icons-side .icon-containers {
+  padding-top: 2rem;
+}
+body .about-main .icons-side .icon-containers .icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 13rem;
+  height: 13rem;
+  background-color: #c26820;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 500px) {
+  body .about-main .icons-side .icon-containers .icon-container {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  body .about-main .icons-side .icon-containers .icon-container {
+    margin: 1rem 0 0 0;
+  }
+}
+body .about-main .icons-side .icon-containers .icon-container:nth-child(2), body .about-main .icons-side .icon-containers .icon-container:nth-child(4) {
+  background-color: #333;
+  margin-left: 15rem;
+  margin-top: -11rem;
+}
+@media screen and (max-width: 500px) {
+  body .about-main .icons-side .icon-containers .icon-container:nth-child(2), body .about-main .icons-side .icon-containers .icon-container:nth-child(4) {
+    margin-left: 11rem;
+    margin-top: -12rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  body .about-main .icons-side .icon-containers .icon-container:nth-child(2), body .about-main .icons-side .icon-containers .icon-container:nth-child(4) {
+    margin: 1rem 0 0 0;
+  }
+}
+body .about-main .icons-side .icon-containers .icon-container .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+body .about-main .icons-side .icon-containers .icon-container .circle i {
+  font-size: 3rem;
+  color: #000;
+}
+body .about-main .icons-side .icon-containers .icon-container p {
+  font-size: 1.2rem;
+  color: #fff;
 }/*# sourceMappingURL=global.css.map */
