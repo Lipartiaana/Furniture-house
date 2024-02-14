@@ -82,4 +82,25 @@ body {
       color: $white-color;
     }
   }
+
+  .section-heading {
+    text-align: center;
+    margin: 2rem;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 28rem;
+      color: $light-gray-color;
+
+      @media screen and (max-width: 768px) {
+        width: 80%;
+      }
+    }
+  }
 }

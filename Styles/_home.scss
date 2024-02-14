@@ -183,7 +183,7 @@ body {
   }
 
   .about-main {
-    margin: 12rem auto;
+    margin: 12rem auto 5rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,12 +192,12 @@ body {
     height: fit-content;
 
     @media screen and (max-width: 992px) {
-      margin: 15rem auto;
+      margin: 15rem auto 5rem auto;
       flex-direction: column;
     }
 
     @media screen and (max-width: 500px) {
-      margin: 20rem auto;
+      margin: 20rem auto 5rem auto;
     }
 
     .text-side {
@@ -288,6 +288,108 @@ body {
           p {
             font-size: 1.2rem;
             color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .rooms {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1360px;
+
+    .room {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      place-items: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 4rem;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+
+      .room-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 33rem;
+          height: 23rem;
+
+          @media screen and (max-width: 1360px) {
+            width: 20rem;
+            height: 15rem;
+          }
+
+          @media screen and (max-width: 400px) {
+            width: 90%;
+          }
+        }
+
+        .image-border {
+          position: absolute;
+          width: 33rem;
+          height: 23rem;
+          top: -2rem;
+          left: 2rem;
+          border: 2px solid $primary-color;
+          border-radius: 1rem;
+          z-index: -1;
+
+          @media screen and (max-width: 1360px) {
+            width: 20rem;
+            height: 100%;
+          }
+
+          @media screen and (max-width: 400px) {
+            display: none;
+          }
+
+          &.left {
+            left: -2rem;
+          }
+        }
+      }
+
+      .room-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          width: 28rem;
+          margin-bottom: 1rem;
+
+          @media screen and (max-width: 1024px) {
+            width: 80%;
+          }
+        }
+
+        &.unreversed {
+          display: none;
+
+          @media screen and (max-width: 768px) {
+            display: flex;
+
+            p {
+              width: 80%;
+            }
+          }
+        }
+
+        &.reversed {
+          @media screen and (max-width: 768px) {
+            display: none;
           }
         }
       }
