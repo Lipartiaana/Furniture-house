@@ -12,7 +12,7 @@ body {
       top: 0;
       z-index: 1000;
       padding: 1rem;
-      width: 100vw;
+      width: 100%;
       max-width: 1600px;
       background-color: $white-color;
 
@@ -88,7 +88,7 @@ body {
     margin: 2rem;
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 2.2rem;
       font-weight: 700;
       margin-bottom: 1rem;
     }

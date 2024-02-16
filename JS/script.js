@@ -38,20 +38,26 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
-    1368: {
+    1360: {
       slidesPerView: 4,
       grid: {
         rows: 2,
       },
     },
-    1024: {
+    1170: {
       slidesPerView: 3,
       grid: {
         rows: 2,
       },
     },
-    0: {
+    768: {
       slidesPerView: 2,
+      grid: {
+        rows: 2,
+      },
+    },
+    0: {
+      slidesPerView: 1,
       grid: {
         rows: 2,
       },
