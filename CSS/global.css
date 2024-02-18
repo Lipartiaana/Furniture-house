@@ -893,4 +893,130 @@ body .manufacturer .manufacturer-image .images-description p {
   body .manufacturer .manufacturer-image .images-description p {
     width: 100%;
   }
+}
+body .recomendations {
+  display: flex;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  body .recomendations {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+}
+body .recomendations .slider-side {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  body .recomendations .slider-side {
+    width: 100%;
+  }
+}
+body .recomendations .slider-side .slider {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+body .recomendations .slider-side .slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+body .recomendations .slider-side .slider .slide .recomendator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+body .recomendations .slider-side .slider .slide .recomendator .recomendator-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .recomendations .slider-side .slider .slide .recomendator .recomendator-info h6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+body .recomendations .slider-side .slider .slide .recomendator .recomendator-info p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+body .recomendations .slider-side .slider .controls {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  body .recomendations .slider-side .slider .controls {
+    margin-top: 12rem;
+  }
+}
+body .recomendations .slider-side .slider .controls .slider-btn {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: #ddd;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+body .recomendations .slider-side .slider .controls .slider-btn:hover {
+  background-color: #286f6c;
+  color: #fff;
+}
+body .recomendations .slider-side .slider .controls .dots .dots-dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+body .recomendations .slider-side .slider .controls .dots .dots-dot-active {
+  background-color: #333;
+  opacity: 1;
+}
+body .recomendations .image-side {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body .recomendations .image-side {
+    width: 100%;
+  }
+}
+body .recomendations .image-side img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  body .recomendations .image-side img {
+    width: 80%;
+  }
 }/*# sourceMappingURL=global.css.map */
