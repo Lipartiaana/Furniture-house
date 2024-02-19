@@ -1,7 +1,7 @@
 function createFeatureHtml(feature) {
   return `<div class="swiper-slide">
             <div class="feature-home">
-              <img src=".${feature.image}" alt="sofa" />
+              <img src=".${feature.image}" alt="${feature.name}" />
               <div class="feature-home-text">
                 <h5>${feature.name}</h5>
                 <p>${feature.price}$</p>
@@ -9,7 +9,7 @@ function createFeatureHtml(feature) {
             </div>`;
 }
 
-fetch("../data.json")
+fetch("/data.json")
   .then((response) => response.json())
   .then((data) => {
     const swiperContainer = document.querySelector(".swiper-wrapper");
@@ -21,7 +21,7 @@ fetch("../data.json")
       }
     });
   })
-  .catch((error) => console.error("Error fetching projects:", error));
+  .catch((error) => console.error("Error fetching products:", error));
 
 var swiper = new Swiper(".mySwiper", {
   navigation: {
