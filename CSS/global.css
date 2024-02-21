@@ -233,6 +233,85 @@ body .section-heading p {
     width: 80%;
   }
 }
+body .footer {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 8rem 4rem;
+  background-color: #333;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  body .footer {
+    padding: 8rem 0.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .footer {
+    padding: 2rem 0.5rem;
+  }
+}
+body .footer a {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+body .footer a:hover {
+  color: #f69548;
+}
+body .footer .footer-first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body .footer .footer-first-line {
+    flex-direction: column;
+  }
+}
+body .footer .footer-first-line .logo {
+  font-size: 1.5rem;
+  font-family: "Kalam", cursive;
+  padding: 1rem;
+}
+body .footer .footer-first-line .footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  body .footer .footer-first-line .footer-menu {
+    flex-direction: column;
+  }
+}
+body .footer .footer-first-line .footer-menu .footer-link {
+  padding: 1rem;
+  cursor: pointer;
+}
+body .footer .footer-first-line .footer-social-media i {
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+body .footer hr {
+  height: 2px;
+  background-color: #fff;
+  border: none;
+  opacity: 0.8;
+}
+body .footer .footer-second-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  body .footer .footer-second-line {
+    flex-direction: column;
+  }
+}
+body .footer .footer-second-line p,
+body .footer .footer-second-line a {
+  padding: 1rem;
+}
 
 body .hero {
   position: relative;
@@ -1022,7 +1101,7 @@ body .recomendations .image-side img {
 }
 body .discount {
   width: 100%;
-  max-width: 1360px;
+  max-width: 1600px;
   height: 25rem;
   position: relative;
   margin: 0 auto;
