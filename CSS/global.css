@@ -1190,4 +1190,185 @@ body .discount .discount-content form .discount-btn {
 }
 body .discount .discount-content form .discount-btn:hover {
   background-color: #c26820;
+}
+
+.our-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 992px) {
+  .our-store {
+    flex-direction: column-reverse;
+  }
+}
+.our-store .our-store-text-content {
+  width: 50%;
+  padding: 1rem;
+}
+@media screen and (max-width: 992px) {
+  .our-store .our-store-text-content {
+    margin-top: 30rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-text-content {
+    margin-top: 58rem;
+  }
+}
+.our-store .our-store-text-content h2 {
+  color: #f69548;
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-left: 5.5rem;
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-text-content h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.our-store .our-store-text-content p {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+.our-store .our-store-image {
+  width: 50%;
+  position: relative;
+  top: 0;
+}
+@media screen and (max-width: 1360px) {
+  .our-store .our-store-image {
+    top: 2rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .our-store .our-store-image {
+    width: 100%;
+    top: 15rem;
+  }
+}
+.our-store .our-store-image img {
+  position: absolute;
+  top: -15rem;
+  left: 0;
+  width: 100%;
+  height: 28rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.our-store .our-store-image h2 {
+  position: absolute;
+  top: -10rem;
+  left: 10%;
+  z-index: 10;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .our-store .our-store-image h2 {
+    font-size: 2rem;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-image h2 {
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.our-store .our-store-image h4 {
+  position: absolute;
+  top: -12.5rem;
+  right: 1.2rem;
+  z-index: 10;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.8);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-image h4 {
+    top: 14rem;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+}
+.our-store .our-store-image .our-uniques {
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-image .our-uniques {
+    top: 33rem;
+    right: 30%;
+  }
+}
+.our-store .our-store-image .our-uniques .our-unique .unique-image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+}
+.our-store .our-store-image .our-uniques .our-unique .unique-image img {
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 10;
+}
+.our-store .our-store-image .our-uniques .our-unique .unique-bg {
+  margin-top: -19.5rem;
+  margin-left: 1rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: #fffefe;
+  opacity: 0.6;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: left;
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-image .our-uniques .our-unique .unique-bg {
+    background-color: #c26820;
+    opacity: 1;
+  }
+}
+.our-store .our-store-image .our-uniques .our-unique .unique-bg h6,
+.our-store .our-store-image .our-uniques .our-unique .unique-bg p {
+  color: #000;
+  font-weight: 900;
+  margin: 0 0.5rem 0.5rem 1rem;
+}
+@media screen and (max-width: 410px) {
+  .our-store .our-store-image .our-uniques .our-unique .unique-bg h6,
+  .our-store .our-store-image .our-uniques .our-unique .unique-bg p {
+    color: #fff;
+    font-weight: 500;
+  }
+}
+.our-store .our-store-image .our-uniques .our-unique:nth-child(2) {
+  margin-top: 11rem;
+}
+.our-store .our-store-image .our-uniques .our-unique:nth-child(2) .unique-image img {
+  margin-top: 11em;
 }/*# sourceMappingURL=global.css.map */
