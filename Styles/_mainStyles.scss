@@ -104,6 +104,16 @@ body {
     }
   }
 
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    background-color: $white-color;
+    border-radius: 50%;
+  }
+
   .footer {
     width: 100%;
     max-width: 1600px;
