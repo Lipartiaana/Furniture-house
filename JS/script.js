@@ -1,66 +1,33 @@
-function createFeatureHtml(feature) {
-  return `<div class="swiper-slide">
-            <div class="feature-home">
-              <img src=".${feature.image}" alt="${feature.name}" />
-              <div class="feature-home-text">
-                <h5>${feature.name}</h5>
-                <p>${feature.price}$</p>
-              </div>
-            </div>`;
-}
+export async function getProductList() {
+  try {
+    const response = await fetch("../data.json");
+    if (!response.ok) {
+      throw new Error("Failed to fetch product list");
+    }
 
-fetch("./data.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const swiperContainer = document.querySelector(".swiper-wrapper");
+    const data = await response.json();
+    const productList = [];
 
     data.products.forEach((product) => {
-      if (product.id <= 12) {
-        const featureHtml = createFeatureHtml(product);
-        swiperContainer.innerHTML += featureHtml;
-      }
+      productList.push(product);
     });
-  })
-  .catch((error) => console.error("Error fetching products:", error));
 
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  slidesPerView: 4,
-  grid: {
-    rows: 2,
-  },
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    1360: {
-      slidesPerView: 4,
-      grid: {
-        rows: 2,
-      },
-    },
-    1170: {
-      slidesPerView: 3,
-      grid: {
-        rows: 2,
-      },
-    },
-    768: {
-      slidesPerView: 2,
-      grid: {
-        rows: 2,
-      },
-    },
-    0: {
-      slidesPerView: 1,
-      grid: {
-        rows: 2,
-      },
-    },
-  },
-});
+    return productList;
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    throw error;
+  }
+}
+
+export function createProduct(product) {
+  return `<div class="product">
+            <img
+              src=".${product.image}"
+              alt="${product.name}"
+            />
+            <div class="product-text">
+              <h5>${product.name}</h5>
+              <p>${product.price}$</p>
+            </div>
+          </div>`;
+}

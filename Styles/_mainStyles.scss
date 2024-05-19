@@ -67,6 +67,41 @@ body {
     }
   }
 
+  .product {
+    width: 18rem;
+    height: 20rem;
+    border: 1px solid $primary-color;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 18rem;
+      height: 15rem;
+      object-fit: cover;
+    }
+
+    .product-text {
+      height: 4.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+
+      h5 {
+        color: $primary-color;
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+      }
+
+      p {
+        color: $primary-color;
+        font-weight: 700;
+      }
+    }
+  }
+
   .btn {
     width: 11rem;
     height: 3.5rem;

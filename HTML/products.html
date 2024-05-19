@@ -71,6 +71,76 @@
         </div>
       </nav>
     </header>
+    <section class="products-container">
+      <div class="products-container-header"><h4>Category name</h4></div>
+      <div class="products-container-content">
+        <div class="products-container-sidebar">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingCategories">
+                <button
+                  class="accordion-button active"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseCategories"
+                  aria-expanded="true"
+                  aria-controls="collapseCategories"
+                >
+                  Categories
+                </button>
+              </h2>
+              <div
+                id="collapseCategories"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingCategories"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>Living Room</li>
+                    <li>Kitchen</li>
+                    <li>Bedroom</li>
+                    <li>Bathroom</li>
+                    <li>Office</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFeatures">
+                <button
+                  class="accordion-button without-ul"
+                  id="sidebar-features-btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFeatures"
+                  aria-expanded="true"
+                  aria-controls="collapseFeatures"
+                >
+                  Features
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingAll">
+                <button
+                  class="accordion-button without-ul active"
+                  id="sidebar-all-btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseAll"
+                  aria-expanded="true"
+                  aria-controls="collapseAll"
+                >
+                  All
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="products-container-wrapper"></div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer-first-line">
         <div class="logo"><a href="../index.html">Furnitre House</a></div>
@@ -108,6 +178,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./JS/script.js"></script>
+    <script type="module" src="../JS/products.js"></script>
   </body>
 </html>

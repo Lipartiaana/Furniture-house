@@ -100,18 +100,18 @@
     },
     {
       "id": 13,
-      "name": "Soft Bath Towel Set",
-      "price": 39.99,
-      "description": "Indulge in luxury with our soft bath towel set. Wrap yourself in comfort after every bath.",
-      "image": "https://example.com/bath-towel-set1.jpg",
+      "name": "Blue Sofa",
+      "price": 249.99,
+      "description": "Add a touch of modern elegance to your living space with our stunning blue sofa, crafted for both style and comfort.",
+      "image": "./Assets/Product-images/blue-sofa1.jpg",
       "category": "Bathroom"
     },
     {
       "id": 14,
-      "name": "Cozy Lounge Chair",
+      "name": "Orange Chair",
       "price": 199.99,
       "description": "Unwind in our cozy lounge chair. An excellent addition to your reading nook or living room.",
-      "image": "https://example.com/lounge-chair1.jpg",
+      "image": "./Assets/Product-images/orange-chair1.jpg",
       "category": "Living Room"
     },
     {
@@ -119,7 +119,7 @@
       "name": "Executive Office Desk",
       "price": 549.99,
       "description": "Upgrade your workspace with our executive office desk. A blend of style and functionality.",
-      "image": "https://example.com/executive-desk1.jpg",
+      "image": "./Assets/Product-images/executive-office-desk1.jpg",
       "category": "Office"
     },
     {
@@ -127,7 +127,7 @@
       "name": "Ergonomic Mesh Office Chair",
       "price": 199.99,
       "description": "Experience comfort during long work hours with our ergonomic mesh office chair. Designed for productivity.",
-      "image": "https://example.com/mesh-office-chair1.jpg",
+      "image": "./Assets/Product-images/ergonomic-mesh-office-chair1.jpg",
       "category": "Office"
     },
     {
@@ -135,7 +135,7 @@
       "name": "Wooden Bathroom Shelf",
       "price": 79.99,
       "description": "Organize your bathroom essentials with our stylish wooden bathroom shelf.",
-      "image": "https://example.com/bathroom-shelf1.jpg",
+      "image": "./Assets/Product-images/bathroom-shelf1.jpg",
       "category": "Bathroom"
     },
     {
@@ -143,7 +143,7 @@
       "name": "Compact Bathroom Cabinet",
       "price": 149.99,
       "description": "Maximize space with our compact bathroom cabinet. Ideal for small bathrooms.",
-      "image": "https://example.com/bathroom-cabinet1.jpg",
+      "image": "./Assets/Product-images/bathroom-cabinet1.jpg",
       "category": "Bathroom"
     },
     {
@@ -151,7 +151,7 @@
       "name": "Stainless Steel Kitchen Cart",
       "price": 129.99,
       "description": "Enhance your kitchen's functionality with our stainless steel kitchen cart. Ideal for food preparation and storage.",
-      "image": "https://example.com/kitchen-cart1.jpg",
+      "image": "./Assets/Product-images/kitchen-cart1.jpg",
       "category": "Kitchen"
     },
     {
@@ -159,7 +159,7 @@
       "name": "King Size Canopy Bed",
       "price": 999.99,
       "description": "Transform your bedroom with our luxurious king-size canopy bed. Create a cozy and elegant sleeping space.",
-      "image": "https://example.com/canopy-bed1.jpg",
+      "image": "./Assets/Product-images/canopy-bed1.jpg",
       "category": "Bedroom"
     },
     {
@@ -167,7 +167,7 @@
       "name": "Decorative Bathroom Mirror",
       "price": 89.99,
       "description": "Add a touch of elegance with our decorative bathroom mirror. Functional and stylish.",
-      "image": "https://example.com/bathroom-mirror1.jpg",
+      "image": "./Assets/Product-images/bathroom-mirror1.jpg",
       "category": "Bathroom"
     },
     {
@@ -175,7 +175,7 @@
       "name": "Bedside Table with Drawers",
       "price": 79.99,
       "description": "Add functionality to your bedroom with our bedside table featuring convenient drawers. A stylish storage solution.",
-      "image": "https://example.com/bedside-table1.jpg",
+      "image": "./Assets/Product-images/bedside-table1.jpg",
       "category": "Bedroom"
     },
     {
@@ -183,7 +183,7 @@
       "name": "Modern Sectional Sofa",
       "price": 899.99,
       "description": "Upgrade your living room with our modern sectional sofa. Perfect for family gatherings and movie nights.",
-      "image": "https://example.com/sectional-sofa1.jpg",
+      "image": "./Assets/Product-images/sectional-sofa1.jpg",
       "category": "Living Room"
     },
     {
@@ -191,7 +191,7 @@
       "name": "Queen Size Upholstered Bed",
       "price": 799.99,
       "description": "Create a cozy atmosphere in your bedroom with our queen-size upholstered bed. Elegant and comfortable.",
-      "image": "https://example.com/upholstered-bed1.jpg",
+      "image": "./Assets/Product-images/upholstered-bed1.jpg",
       "category": "Bedroom"
     },
     {
@@ -199,7 +199,7 @@
       "name": "Rustic Coffee Table",
       "price": 179.99,
       "description": "Add a touch of rustic charm to your living room with our sturdy and stylish coffee table.",
-      "image": "https://example.com/rustic-coffee-table1.jpg",
+      "image": "./Assets/Product-images/rustic-coffee-table1.jpg",
       "category": "Living Room"
     }
   ]
