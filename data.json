@@ -4,6 +4,8 @@
       "id": 1,
       "name": "Luxurious Leather Sofa",
       "price": 699.99,
+      "color": "Black",
+      "size": "210 x 90 x 100",
       "description": "Experience ultimate comfort with our luxurious leather sofa. Perfect for your elegant living room.",
       "image": "./Assets/Product-images/sofa1.jpg",
       "category": "Living Room"
@@ -12,6 +14,8 @@
       "id": 2,
       "name": "Contemporary Glass Dining Table",
       "price": 499.99,
+      "color": "White",
+      "size": "150 x 90 x 75",
       "description": "Add a touch of modernity to your dining area with our contemporary glass dining table.",
       "image": "./Assets/Product-images/dining-table1.jpg",
       "category": "Kitchen"
@@ -20,6 +24,8 @@
       "id": 3,
       "name": "Plush King Size Bed",
       "price": 899.99,
+      "color": "Beige",
+      "size": "200 x 180 x 120",
       "description": "Indulge in the comfort of our plush king-size bed. Ideal for a restful night's sleep in your bedroom.",
       "image": "./Assets/Product-images/plush-king-size1.jpeg",
       "category": "Bedroom"
@@ -28,6 +34,8 @@
       "id": 4,
       "name": "Modern Coffee Table",
       "price": 149.99,
+      "color": "White",
+      "size": "120 (Diameter) x 45",
       "description": "Upgrade your living room with our sleek and modern coffee table featuring convenient storage options.",
       "image": "./Assets/Product-images/coffee-table1.jpg",
       "category": "Living Room"
@@ -36,6 +44,8 @@
       "id": 5,
       "name": "Vintage Writing Desk",
       "price": 349.99,
+      "color": "Brown",
+      "size": "140 x 60 x 80",
       "description": "Create a stylish and productive workspace with our vintage writing desk. Perfect for your home office.",
       "image": "./Assets/Product-images/writing-desk1.jpg",
       "category": "Office"
@@ -45,6 +55,8 @@
       "id": 6,
       "name": "Modern Vanity Sink",
       "price": 299.99,
+      "color": "Gray",
+      "size": "80 x 50 x 85",
       "description": "Upgrade your bathroom with our modern vanity sink. Stylish and functional.",
       "image": "./Assets/Product-images/vanity-sink1.jpg",
       "category": "Bathroom"
@@ -54,6 +66,8 @@
       "id": 7,
       "name": "Modern Dining Table",
       "price": 299.99,
+      "color": "White",
+      "size": "180 x 90 x 75",
       "description": "A sleek dining table for family gatherings.",
       "image": "./Assets/Product-images/dining-table2.jpg",
       "category": "Kitchen"
@@ -62,6 +76,8 @@
       "id": 8,
       "name": "Elegant Sofa",
       "price": 499.99,
+      "color": "White",
+      "size": "230 x 90 x 100",
       "description": "A stylish and comfortable sofa for your living room.",
       "image": "./Assets/Product-images/sofa2.jpg",
       "category": "Living Room"
@@ -70,6 +86,8 @@
       "id": 9,
       "name": "Office Chair",
       "price": 129.99,
+      "color": "Black",
+      "size": "60 x 60 x 100",
       "description": "An ergonomic office chair for long hours of work.",
       "image": "./Assets/Product-images/office-chair1.jpg",
       "category": "Office"
@@ -78,6 +96,8 @@
       "id": 10,
       "name": "Cozy Bed",
       "price": 799.99,
+      "color": "Beige",
+      "size": "200 x 160 x 110",
       "description": "A comfortable bed for a good night's sleep.",
       "image": "./Assets/Product-images/cozy-bed1.jpg",
       "category": "Bedroom"
@@ -86,6 +106,8 @@
       "id": 11,
       "name": "Coffee Table with Storage",
       "price": 149.99,
+      "color": "Beige",
+      "size": "110 x 55 x 45",
       "description": "A practical coffee table with built-in storage compartments.",
       "image": "./Assets/Product-images/coffee-table2.jpg",
       "category": "Living Room"
@@ -94,6 +116,8 @@
       "id": 12,
       "name": "Rainfall Shower Head",
       "price": 129.99,
+      "color": "Gray",
+      "size": "25 x 25 x 10",
       "description": "Transform your shower experience with our rainfall shower head. Enjoy a soothing downpour.",
       "image": "./Assets/Product-images/shower-head1.jpg",
       "category": "Bathroom"
@@ -102,6 +126,8 @@
       "id": 13,
       "name": "Blue Sofa",
       "price": 249.99,
+      "color": "Blue",
+      "size": "210 x 90 x 100",
       "description": "Add a touch of modern elegance to your living space with our stunning blue sofa, crafted for both style and comfort.",
       "image": "./Assets/Product-images/blue-sofa1.jpg",
       "category": "Bathroom"
@@ -110,6 +136,8 @@
       "id": 14,
       "name": "Orange Chair",
       "price": 199.99,
+      "color": "Orange",
+      "size": "50 x 50 x 100",
       "description": "Unwind in our cozy lounge chair. An excellent addition to your reading nook or living room.",
       "image": "./Assets/Product-images/orange-chair1.jpg",
       "category": "Living Room"
@@ -118,86 +146,98 @@
       "id": 15,
       "name": "Executive Office Desk",
       "price": 549.99,
+      "color": "Brown",
+      "size": "150 x 90 x 80",
       "description": "Upgrade your workspace with our executive office desk. A blend of style and functionality.",
       "image": "./Assets/Product-images/executive-office-desk1.jpg",
       "category": "Office"
     },
     {
       "id": 16,
-      "name": "Ergonomic Mesh Office Chair",
-      "price": 199.99,
-      "description": "Experience comfort during long work hours with our ergonomic mesh office chair. Designed for productivity.",
-      "image": "./Assets/Product-images/ergonomic-mesh-office-chair1.jpg",
-      "category": "Office"
-    },
-    {
-      "id": 17,
       "name": "Wooden Bathroom Shelf",
       "price": 79.99,
+      "color": "Beige",
+      "size": "80 x 30 x 120",
       "description": "Organize your bathroom essentials with our stylish wooden bathroom shelf.",
       "image": "./Assets/Product-images/bathroom-shelf1.jpg",
       "category": "Bathroom"
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "Compact Bathroom Cabinet",
       "price": 149.99,
+      "color": "White",
+      "size": "50 x 50 x 70",
       "description": "Maximize space with our compact bathroom cabinet. Ideal for small bathrooms.",
       "image": "./Assets/Product-images/bathroom-cabinet1.jpg",
       "category": "Bathroom"
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Stainless Steel Kitchen Cart",
       "price": 129.99,
+      "color": "Beige",
+      "size": "70 x 40 x 60",
       "description": "Enhance your kitchen's functionality with our stainless steel kitchen cart. Ideal for food preparation and storage.",
       "image": "./Assets/Product-images/kitchen-cart1.jpg",
       "category": "Kitchen"
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "King Size Canopy Bed",
       "price": 999.99,
+      "color": "Beige",
+      "size": "200 x 160 x 110",
       "description": "Transform your bedroom with our luxurious king-size canopy bed. Create a cozy and elegant sleeping space.",
       "image": "./Assets/Product-images/canopy-bed1.jpg",
       "category": "Bedroom"
     },
     {
-      "id": 21,
+      "id": 20,
       "name": "Decorative Bathroom Mirror",
       "price": 89.99,
+      "color": "Black",
+      "size": "60 x 5 x 80",
       "description": "Add a touch of elegance with our decorative bathroom mirror. Functional and stylish.",
       "image": "./Assets/Product-images/bathroom-mirror1.jpg",
       "category": "Bathroom"
     },
     {
-      "id": 22,
+      "id": 21,
       "name": "Bedside Table with Drawers",
       "price": 79.99,
+      "color": "Gray",
+      "size": "50 x 50 x 70",
       "description": "Add functionality to your bedroom with our bedside table featuring convenient drawers. A stylish storage solution.",
       "image": "./Assets/Product-images/bedside-table1.jpg",
       "category": "Bedroom"
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "Modern Sectional Sofa",
       "price": 899.99,
+      "color": "White",
+      "size": "240 (120 - 120 ) x 60 x 90",
       "description": "Upgrade your living room with our modern sectional sofa. Perfect for family gatherings and movie nights.",
       "image": "./Assets/Product-images/sectional-sofa1.jpg",
       "category": "Living Room"
     },
     {
-      "id": 24,
+      "id": 23,
       "name": "Queen Size Upholstered Bed",
       "price": 799.99,
+      "color": "Gray",
+      "size": "240 x 180 x 110 (full - 210)",
       "description": "Create a cozy atmosphere in your bedroom with our queen-size upholstered bed. Elegant and comfortable.",
       "image": "./Assets/Product-images/upholstered-bed1.jpg",
       "category": "Bedroom"
     },
     {
-      "id": 25,
+      "id": 24,
       "name": "Rustic Coffee Table",
       "price": 179.99,
+      "color": "Brown",
+      "size": "80 x 40 x 45",
       "description": "Add a touch of rustic charm to your living room with our sturdy and stylish coffee table.",
       "image": "./Assets/Product-images/rustic-coffee-table1.jpg",
       "category": "Living Room"
