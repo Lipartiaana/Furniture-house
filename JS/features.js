@@ -5,7 +5,7 @@ const swiperContainer = document.querySelector(".swiper-wrapper");
 
 async function showFeatures() {
   try {
-    const productList = await getProductList();
+    const productList = await getProductList("features");
 
     productList.forEach((product) => {
       if (product.id <= 12) {

@@ -1,6 +1,12 @@
-export async function getProductList() {
+export async function getProductList(category) {
   try {
-    const response = await fetch("../data.json");
+    let response;
+    if (category === "features") {
+      response = await fetch("./data.json");
+    } else if (category === "all") {
+      response = await fetch("../data.json");
+    }
+
     if (!response.ok) {
       throw new Error("Failed to fetch product list");
     }

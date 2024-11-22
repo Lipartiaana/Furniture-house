@@ -10,7 +10,7 @@ closeProductBtn.addEventListener("click", () => {
 });
 
 async function createProductLinks() {
-  const productList = await getProductList();
+  const productList = await getProductList("all");
 
   productList.forEach((product) => {
     const productLink = document.createElement("a");
