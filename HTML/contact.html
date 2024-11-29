@@ -38,7 +38,14 @@
     <link rel="stylesheet" href="../CSS/global.css" />
     <!-- Scripts -->
   </head>
-  <body>
+  <body
+    style="
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    "
+  >
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
         <a class="navbar-brand" href="../index.html">Furniture House</a>
@@ -71,7 +78,25 @@
         </div>
       </nav>
     </header>
-    <div class="contact-container" style="height: 68vh"></div>
+    <div class="contact-container">
+      <div class="contact-form">
+        <div class="contact-img">
+          <img src="../Assets/contact-bg.jpg" alt="contact-bg" />
+        </div>
+        <div class="contact-form-form">
+          <h3>Contact Form</h3>
+          <form class="contact-form-inputs">
+            <label for="fullName">Full Name</label>
+            <input type="text" name="fullName" id="fullName" required />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" required />
+            <label for="message">Comment or message</label>
+            <input type="text" name="message" id="message" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <footer class="footer-container">
       <div class="footer">
         <div class="footer-first-line">
@@ -111,6 +136,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./JS/script.js"></script>
+    <script src="../JS/script.js"></script>
   </body>
 </html>
