@@ -158,7 +158,7 @@ body header .navbar {
   position: absolute;
   top: 0;
   z-index: 1000;
-  padding: 1rem;
+  padding: 0.9rem;
   width: 100%;
   max-width: 1600px;
   background-color: #fff;
@@ -170,7 +170,7 @@ body header .navbar .navbar-brand {
   font-weight: 900;
   margin-left: 3rem;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   body header .navbar .navbar-brand {
     margin-left: 0;
     font-size: 1.8rem;
@@ -187,14 +187,19 @@ body header .navbar #navbarNav {
   justify-content: flex-end;
   margin-right: 3rem;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   body header .navbar #navbarNav {
     margin-right: 0;
   }
 }
 body header .navbar #navbarNav li {
-  margin: 0 2rem;
+  margin: 0 1.1rem;
   font-size: 1.1rem;
+}
+body header .navbar #navbarNav li.cart {
+  padding: 0 10px;
+  border: 1px solid #bbb;
+  border-radius: 100px;
 }
 body header .navbar #navbarNav li .nav-link {
   color: #000;

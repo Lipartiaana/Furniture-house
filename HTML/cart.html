@@ -75,96 +75,7 @@
         </div>
       </nav>
     </header>
-    <div class="product-modal-layout hidden">
-      <div class="product-modal">
-        <span class="close">&times;</span>
-        <img
-          id="productImage"
-          class="product-image"
-          src="../Assets/Product-images/bathroom-cabinet1.jpg"
-          alt="product"
-        />
-        <div class="product-modal-description">
-          <h3 id="productName">Product Title</h3>
-          <p id="productDescription">Product description</p>
-          <span id="productPrice">price: $00.00</span>
-          <p id="productColor">color: Product color</p>
-          <p id="productSize">size: 0 x 0 x 0</p>
-          <p id="productRoomType">Room Type: category</p>
-          <button class="btn">Add to cart</button>
-        </div>
-      </div>
-    </div>
-    <section class="products-container">
-      <div class="products-container-header"><h4>Category name</h4></div>
-      <div class="products-container-content">
-        <div class="products-container-sidebar">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingCategories">
-                <button
-                  class="accordion-button active"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseCategories"
-                  aria-expanded="true"
-                  aria-controls="collapseCategories"
-                >
-                  Categories
-                </button>
-              </h2>
-              <div
-                id="collapseCategories"
-                class="accordion-collapse collapse show"
-                aria-labelledby="headingCategories"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <ul>
-                    <li>Living Room</li>
-                    <li>Kitchen</li>
-                    <li>Bedroom</li>
-                    <li>Bathroom</li>
-                    <li>Office</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFeatures">
-                <button
-                  class="accordion-button without-ul"
-                  id="sidebar-features-btn"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseFeatures"
-                  aria-expanded="true"
-                  aria-controls="collapseFeatures"
-                >
-                  Features
-                </button>
-              </h2>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingAll">
-                <button
-                  class="accordion-button without-ul active"
-                  id="sidebar-all-btn"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseAll"
-                  aria-expanded="true"
-                  aria-controls="collapseAll"
-                >
-                  All
-                </button>
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="products-container-wrapper"></div>
-      </div>
-    </section>
+    <div class="cart-container" style="height: 70vh"></div>
     <footer class="footer-container">
       <div class="footer">
         <div class="footer-first-line">
@@ -203,7 +114,5 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script type="module" src="../JS/products.js"></script>
   </body>
 </html>

@@ -15,7 +15,7 @@ body {
       position: absolute;
       top: 0;
       z-index: 1000;
-      padding: 1rem;
+      padding: 0.9rem;
       width: 100%;
       max-width: 1600px;
       background-color: $white-color;
@@ -27,7 +27,7 @@ body {
         font-weight: 900;
         margin-left: 3rem;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
           margin-left: 0;
           font-size: 1.8rem;
         }
@@ -50,13 +50,19 @@ body {
         justify-content: flex-end;
         margin-right: 3rem;
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 1024px) {
           margin-right: 0;
         }
 
         li {
-          margin: 0 2rem;
+          margin: 0 1.1rem;
           font-size: 1.1rem;
+
+          &.cart {
+            padding: 0 10px;
+            border: 1px solid #bbb;
+            border-radius: 100px;
+          }
 
           .nav-link {
             color: $black-color;
