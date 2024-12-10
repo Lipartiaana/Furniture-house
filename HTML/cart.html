@@ -75,7 +75,90 @@
         </div>
       </nav>
     </header>
-    <div class="cart-container" style="height: 70vh"></div>
+    <div class="cart-container" style="min-height: 70vh">
+      <div class="cart">
+        <div class="cart-heading">
+          <h3>Shopping Cart</h3>
+          <h4><span class="item-count"> 0 </span>items</h4>
+        </div>
+        <hr />
+        <div class="cart-items">
+          <table>
+            <tr>
+              <th>Product details</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+            <tr class="item">
+              <td class="item-details">
+                <img
+                  src="../Assets/Product-images/bathroom-cabinet1.jpg"
+                  alt="img"
+                />
+                <div class="item-details-text">
+                  <h5>Product title</h5>
+                  <p>Product description</p>
+                  <a>Remove</a>
+                </div>
+              </td>
+              <td><button>-</button> 0 <button>+</button></td>
+              <td>000.00$</td>
+              <td>000.00$</td>
+            </tr>
+            <tr class="item">
+              <td class="item-details">
+                <img
+                  src="../Assets/Product-images/bathroom-cabinet1.jpg"
+                  alt="img"
+                />
+                <div class="item-details-text">
+                  <h5>Product title</h5>
+                  <p>Product description</p>
+                  <a>Remove</a>
+                </div>
+              </td>
+              <td><button>-</button> 0 <button>+</button></td>
+              <td>000.00$</td>
+              <td>000.00$</td>
+            </tr>
+          </table>
+        </div>
+        <div class="continue">
+          <a href="./products.html">
+            <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+          </a>
+        </div>
+      </div>
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <hr />
+        <div class="total-info">
+          <h5>items <span class="item-count">0</span></h5>
+          <p>000.00$</p>
+        </div>
+        <div class="shipping">
+          <label for="shipping-method">Shipping Method</label>
+          <select id="shipping-method" name="shipping-method">
+            <option value="customer-pickup">
+              Customer Pickup from Warehouse
+            </option>
+            <option value="standart">Standard Home Delivery</option>
+            <option value="white-glove">
+              White-Glove Delivery (includes assembly and placement)
+            </option>
+          </select>
+        </div>
+        <hr />
+        <div class="total">
+          <div class="total-price">
+            <h5>total cost</h5>
+            <h5 class="total-cost">000.00$</h5>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
     <footer class="footer-container">
       <div class="footer">
         <div class="footer-first-line">

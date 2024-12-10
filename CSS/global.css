@@ -1947,4 +1947,189 @@ body .discount .discount-content form .discount-btn:hover {
   .contact-container .contact-form .contact-form-form .contact-form-inputs button {
     width: 250px;
   }
+}
+
+.cart-container {
+  margin: 6rem auto 5rem auto;
+  width: 98%;
+  max-width: 1360px;
+  box-shadow: 2px 2px 2px 3px #bbb;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .cart-container {
+    flex-direction: column;
+  }
+}
+.cart-container h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.cart-container h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.cart-container h5,
+.cart-container th {
+  text-transform: uppercase;
+}
+.cart-container button {
+  background-color: #f69548;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+.cart-container button.checkout-btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.cart-container button.checkout-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.cart-container .cart {
+  flex: 7;
+  background-color: #fdfdfd;
+  padding: 2rem;
+}
+@media (max-width: 640px) {
+  .cart-container .cart {
+    padding: 1rem;
+  }
+}
+.cart-container .cart .cart-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-container .cart .cart-items table {
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .cart-container .cart .cart-items table {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 540px) {
+  .cart-container .cart .cart-items table {
+    font-size: 0.8rem;
+  }
+}
+.cart-container .cart .cart-items table th {
+  padding: 0 3px 0 0;
+}
+.cart-container .cart .cart-items table td {
+  vertical-align: top;
+  padding-top: 15px;
+}
+.cart-container .cart .cart-items table td button {
+  background-color: #f3f0ef;
+  border: 1px solid #bbb;
+}
+@media (max-width: 540px) {
+  .cart-container .cart .cart-items table td button {
+    padding: 5px;
+  }
+}
+.cart-container .cart .cart-items table .item-details {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+@media (max-width: 540px) {
+  .cart-container .cart .cart-items table .item-details {
+    flex-direction: column;
+  }
+}
+.cart-container .cart .cart-items table .item-details img {
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 600px) {
+  .cart-container .cart .cart-items table .item-details img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 540px) {
+  .cart-container .cart .cart-items table .item-details img {
+    width: 60px;
+    height: 60px;
+  }
+}
+.cart-container .cart .cart-items table .item-details .item-details-text {
+  height: 150px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 5px;
+}
+@media (max-width: 600px) {
+  .cart-container .cart .cart-items table .item-details .item-details-text {
+    height: 100px;
+    gap: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .cart-container .cart .cart-items table .item-details .item-details-text {
+    height: 60px;
+    margin-top: 0;
+  }
+}
+.cart-container .cart .cart-items table .item-details .item-details-text h5 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.cart-container .cart .cart-items table .item-details .item-details-text p {
+  color: #f69548;
+}
+.cart-container .cart a {
+  color: #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.cart-container .cart a:hover {
+  color: #f69548;
+}
+.cart-container .cart .continue {
+  margin-top: 10px;
+}
+.cart-container .order-summary {
+  flex: 3;
+  background-color: #f3f0ef;
+  padding: 2rem;
+}
+@media (max-width: 640px) {
+  .cart-container .order-summary {
+    padding: 1rem;
+  }
+}
+.cart-container .total-info,
+.cart-container .total-price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.cart-container .shipping {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.cart-container .shipping select {
+  width: 300px;
+  border: 1px solid #bbb;
+  font-size: 0.9rem;
+}
+.cart-container .shipping select option {
+  transition: all 0.3s ease;
+}
+.cart-container .shipping select option:hover {
+  background-color: #f69548;
 }/*# sourceMappingURL=global.css.map */
