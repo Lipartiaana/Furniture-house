@@ -82,7 +82,7 @@
           <h4><span class="item-count"> 0 </span>items</h4>
         </div>
         <hr />
-        <div class="cart-items">
+        <div class="cart-items-container">
           <table>
             <tr>
               <th>Product details</th>
@@ -90,40 +90,10 @@
               <th>Price</th>
               <th>Total</th>
             </tr>
-            <tr class="item">
-              <td class="item-details">
-                <img
-                  src="../Assets/Product-images/bathroom-cabinet1.jpg"
-                  alt="img"
-                />
-                <div class="item-details-text">
-                  <h5>Product title</h5>
-                  <p>Product description</p>
-                  <a>Remove</a>
-                </div>
-              </td>
-              <td><button>-</button> 0 <button>+</button></td>
-              <td>000.00$</td>
-              <td>000.00$</td>
-            </tr>
-            <tr class="item">
-              <td class="item-details">
-                <img
-                  src="../Assets/Product-images/bathroom-cabinet1.jpg"
-                  alt="img"
-                />
-                <div class="item-details-text">
-                  <h5>Product title</h5>
-                  <p>Product description</p>
-                  <a>Remove</a>
-                </div>
-              </td>
-              <td><button>-</button> 0 <button>+</button></td>
-              <td>000.00$</td>
-              <td>000.00$</td>
-            </tr>
+            <tbody class="cart-items"></tbody>
           </table>
         </div>
+        <div class="empty">Your Cart is Empty</div>
         <div class="continue">
           <a href="./products.html">
             <i class="fa-solid fa-arrow-left"></i> Continue Shopping
@@ -134,17 +104,17 @@
         <h3>Order Summary</h3>
         <hr />
         <div class="total-info">
-          <h5>items <span class="item-count">0</span></h5>
-          <p>000.00$</p>
+          <h5>items <span class="item-count-full">0</span></h5>
+          <p class="items-cost">000.00$</p>
         </div>
         <div class="shipping">
           <label for="shipping-method">Shipping Method</label>
           <select id="shipping-method" name="shipping-method">
-            <option value="customer-pickup">
+            <option value="0" data-price="0">
               Customer Pickup from Warehouse
             </option>
-            <option value="standart">Standard Home Delivery</option>
-            <option value="white-glove">
+            <option value="50" data-price="50">Standard Home Delivery</option>
+            <option value="150" data-price="150">
               White-Glove Delivery (includes assembly and placement)
             </option>
           </select>
@@ -197,5 +167,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="../JS/cart.js"></script>
   </body>
 </html>

@@ -237,14 +237,35 @@
         }
       }
 
-      button {
-        width: 15rem;
-        height: 3rem;
-        border-radius: 8px;
+      .modal-btns {
+        display: flex;
+        justify-content: left;
+        align-items: center;
         margin-top: 1.5rem;
+        gap: 10px;
 
-        @media (max-width: 500px) {
-          align-self: center;
+        button {
+          width: 15rem;
+          height: 3rem;
+          border-radius: 8px;
+
+          @media (max-width: 500px) {
+            align-self: center;
+          }
+        }
+
+        .cart-btn {
+          border: 1px solid #bbb;
+          border-radius: 5px;
+          margin-top: 1rem;
+          padding: 15px 15px 15px 12px;
+          cursor: pointer;
+          color: $black-color;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #f3f0ef;
+          }
         }
       }
     }

@@ -4,9 +4,11 @@ import { createProduct } from "./script.js";
 const closeProductBtn = document.querySelector(".close");
 const productModal = document.querySelector(".product-modal-layout");
 const productContainer = document.querySelector(".products-container-wrapper");
+const messageContainer = document.getElementById("messageContainer");
 
 closeProductBtn.addEventListener("click", () => {
   productModal.classList.add("hidden");
+  messageContainer.textContent = "";
 });
 
 async function createProductLinks() {
@@ -42,6 +44,21 @@ async function createProductLinks() {
       document.getElementById(
         "productRoomType"
       ).textContent = `Room Type: ${productData.category}`;
+
+      const addBtn = document.getElementById("addBtn");
+
+      addBtn.onclick = () => {
+        const existingItem = sessionStorage.getItem(productData.id);
+
+        if (existingItem) {
+          messageContainer.textContent = "Item is already in the cart.";
+          messageContainer.classList.add("success-message");
+        } else {
+          sessionStorage.setItem(productData.id, JSON.stringify(productData));
+          messageContainer.textContent = "Item has been added to the cart.";
+          messageContainer.classList.add("success-message");
+        }
+      };
 
       productModal.classList.remove("hidden");
     });

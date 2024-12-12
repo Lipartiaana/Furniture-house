@@ -58,7 +58,17 @@
       justify-content: space-between;
     }
 
-    .cart-items {
+    .empty {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 2rem;
+      font-size: 1.2rem;
+      color: #f69548;
+      font-weight: 600;
+    }
+
+    .cart-items-container {
       table {
         width: 100%;
 
@@ -137,6 +147,7 @@
 
             p {
               color: $primary-color;
+              font-weight: 600;
             }
           }
         }
