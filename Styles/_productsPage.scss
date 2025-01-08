@@ -175,6 +175,11 @@
       height: 500px;
       object-fit: cover;
 
+      @media (max-height: 700px) {
+        width: 450px;
+        height: 450px;
+      }
+
       @media (max-height: 400px) {
         max-height: 250px;
       }
@@ -251,6 +256,7 @@
 
           @media (max-width: 500px) {
             align-self: center;
+            width: 13rem;
           }
         }
 

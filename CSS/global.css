@@ -366,6 +366,707 @@ body .footer-container .footer .footer-second-line a {
   padding: 1rem;
 }
 
+.product-modal-layout,
+.checkout-modal-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+}
+.product-modal-layout .order-confirmed,
+.checkout-modal-layout .order-confirmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  height: 250px;
+  border: 3px solid #f69548;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #f69548;
+  background-color: #fff;
+  position: relative;
+}
+@media (max-width: 420px) {
+  .product-modal-layout .order-confirmed,
+  .checkout-modal-layout .order-confirmed {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+}
+.product-modal-layout .order-confirmed i,
+.checkout-modal-layout .order-confirmed i {
+  font-size: 4rem;
+  margin-top: 20px;
+}
+.product-modal-layout .order-confirmed.hidden,
+.checkout-modal-layout .order-confirmed.hidden {
+  display: none;
+}
+.product-modal-layout .order-confirmed .close-confirm,
+.checkout-modal-layout .order-confirmed .close-confirm {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.product-modal-layout .order-confirmed .close-confirm:hover,
+.checkout-modal-layout .order-confirmed .close-confirm:hover {
+  color: #333;
+}
+.product-modal-layout .product-modal,
+.product-modal-layout .checkout-modal,
+.checkout-modal-layout .product-modal,
+.checkout-modal-layout .checkout-modal {
+  width: 1200px;
+  border: 3px solid #f69548;
+  border-radius: 8px;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  position: relative;
+}
+@media (max-width: 1360px) {
+  .product-modal-layout .product-modal,
+  .product-modal-layout .checkout-modal,
+  .checkout-modal-layout .product-modal,
+  .checkout-modal-layout .checkout-modal {
+    width: 90%;
+  }
+}
+@media (max-height: 920px) {
+  .product-modal-layout .product-modal,
+  .product-modal-layout .checkout-modal,
+  .checkout-modal-layout .product-modal,
+  .checkout-modal-layout .checkout-modal {
+    max-height: 90%;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 820px) {
+  .product-modal-layout .product-modal,
+  .product-modal-layout .checkout-modal,
+  .checkout-modal-layout .product-modal,
+  .checkout-modal-layout .checkout-modal {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .product-modal-layout .product-modal,
+  .product-modal-layout .checkout-modal,
+  .checkout-modal-layout .product-modal,
+  .checkout-modal-layout .checkout-modal {
+    gap: 20px;
+  }
+}
+.product-modal-layout .product-modal .close,
+.product-modal-layout .checkout-modal .close,
+.checkout-modal-layout .product-modal .close,
+.checkout-modal-layout .checkout-modal .close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #f69548;
+}
+.product-modal-layout .product-modal .close:hover,
+.product-modal-layout .checkout-modal .close:hover,
+.checkout-modal-layout .product-modal .close:hover,
+.checkout-modal-layout .checkout-modal .close:hover {
+  color: #333;
+}
+@media (max-width: 820px) {
+  .product-modal-layout .product-modal .close,
+  .product-modal-layout .checkout-modal .close,
+  .checkout-modal-layout .product-modal .close,
+  .checkout-modal-layout .checkout-modal .close {
+    top: -12px;
+    right: 0;
+  }
+}
+.product-modal-layout .product-modal .product-image,
+.product-modal-layout .checkout-modal .product-image,
+.checkout-modal-layout .product-modal .product-image,
+.checkout-modal-layout .checkout-modal .product-image {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-height: 400px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    max-height: 250px;
+  }
+}
+@media (max-width: 1200px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (max-width: 1024px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 920px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 820px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    height: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .product-modal-layout .product-modal .product-image,
+  .product-modal-layout .checkout-modal .product-image,
+  .checkout-modal-layout .product-modal .product-image,
+  .checkout-modal-layout .checkout-modal .product-image {
+    height: 250px;
+  }
+}
+.product-modal-layout .product-modal .product-modal-description,
+.product-modal-layout .checkout-modal .product-modal-description,
+.checkout-modal-layout .product-modal .product-modal-description,
+.checkout-modal-layout .checkout-modal .product-modal-description {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media (max-width: 820px) {
+  .product-modal-layout .product-modal .product-modal-description,
+  .product-modal-layout .checkout-modal .product-modal-description,
+  .checkout-modal-layout .product-modal .product-modal-description,
+  .checkout-modal-layout .checkout-modal .product-modal-description {
+    width: 100%;
+  }
+}
+.product-modal-layout .product-modal .product-modal-description h3,
+.product-modal-layout .checkout-modal .product-modal-description h3,
+.checkout-modal-layout .product-modal .product-modal-description h3,
+.checkout-modal-layout .checkout-modal .product-modal-description h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.product-modal-layout .product-modal .product-modal-description p,
+.product-modal-layout .checkout-modal .product-modal-description p,
+.checkout-modal-layout .product-modal .product-modal-description p,
+.checkout-modal-layout .checkout-modal .product-modal-description p {
+  margin-right: 1rem;
+}
+.product-modal-layout .product-modal .product-modal-description span,
+.product-modal-layout .checkout-modal .product-modal-description span,
+.checkout-modal-layout .product-modal .product-modal-description span,
+.checkout-modal-layout .checkout-modal .product-modal-description span {
+  color: #f69548;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+@media (max-width: 920px) {
+  .product-modal-layout .product-modal .product-modal-description span,
+  .product-modal-layout .checkout-modal .product-modal-description span,
+  .checkout-modal-layout .product-modal .product-modal-description span,
+  .checkout-modal-layout .checkout-modal .product-modal-description span {
+    margin: 0.5rem 0;
+  }
+}
+.product-modal-layout .product-modal .product-modal-description .modal-btns,
+.product-modal-layout .checkout-modal .product-modal-description .modal-btns,
+.checkout-modal-layout .product-modal .product-modal-description .modal-btns,
+.checkout-modal-layout .checkout-modal .product-modal-description .modal-btns {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 10px;
+}
+.product-modal-layout .product-modal .product-modal-description .modal-btns button,
+.product-modal-layout .checkout-modal .product-modal-description .modal-btns button,
+.checkout-modal-layout .product-modal .product-modal-description .modal-btns button,
+.checkout-modal-layout .checkout-modal .product-modal-description .modal-btns button {
+  width: 15rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+@media (max-width: 500px) {
+  .product-modal-layout .product-modal .product-modal-description .modal-btns button,
+  .product-modal-layout .checkout-modal .product-modal-description .modal-btns button,
+  .checkout-modal-layout .product-modal .product-modal-description .modal-btns button,
+  .checkout-modal-layout .checkout-modal .product-modal-description .modal-btns button {
+    align-self: center;
+  }
+}
+.product-modal-layout .product-modal .product-modal-description .modal-btns .cart-btn,
+.product-modal-layout .checkout-modal .product-modal-description .modal-btns .cart-btn,
+.checkout-modal-layout .product-modal .product-modal-description .modal-btns .cart-btn,
+.checkout-modal-layout .checkout-modal .product-modal-description .modal-btns .cart-btn {
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 15px 15px 15px 12px;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s ease;
+}
+.product-modal-layout .product-modal .product-modal-description .modal-btns .cart-btn:hover,
+.product-modal-layout .checkout-modal .product-modal-description .modal-btns .cart-btn:hover,
+.checkout-modal-layout .product-modal .product-modal-description .modal-btns .cart-btn:hover,
+.checkout-modal-layout .checkout-modal .product-modal-description .modal-btns .cart-btn:hover {
+  background-color: #f3f0ef;
+}
+.product-modal-layout .product-modal .checkout-form-container,
+.product-modal-layout .checkout-modal .checkout-form-container,
+.checkout-modal-layout .product-modal .checkout-form-container,
+.checkout-modal-layout .checkout-modal .checkout-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+}
+@media (max-width: 1400px) {
+  .product-modal-layout .product-modal .checkout-form-container,
+  .product-modal-layout .checkout-modal .checkout-form-container,
+  .checkout-modal-layout .product-modal .checkout-form-container,
+  .checkout-modal-layout .checkout-modal .checkout-form-container {
+    padding: 0.5rem;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container h2,
+.product-modal-layout .checkout-modal .checkout-form-container h2,
+.checkout-modal-layout .product-modal .checkout-form-container h2,
+.checkout-modal-layout .checkout-modal .checkout-form-container h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f69548;
+  text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .product-modal-layout .product-modal .checkout-form-container h2,
+  .product-modal-layout .checkout-modal .checkout-form-container h2,
+  .checkout-modal-layout .product-modal .checkout-form-container h2,
+  .checkout-modal-layout .checkout-modal .checkout-form-container h2 {
+    font-size: 1.1rem;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container button,
+.product-modal-layout .checkout-modal .checkout-form-container button,
+.checkout-modal-layout .product-modal .checkout-form-container button,
+.checkout-modal-layout .checkout-modal .checkout-form-container button {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 20px;
+  background-color: #f69548;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.product-modal-layout .product-modal .checkout-form-container button:hover,
+.product-modal-layout .checkout-modal .checkout-form-container button:hover,
+.checkout-modal-layout .product-modal .checkout-form-container button:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container button:hover {
+  background-color: #333;
+  color: #fff;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form {
+    gap: 0px;
+  }
+}
+@media (max-width: 840px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form {
+    flex-direction: column;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form h3,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form h3,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form h3,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form h3 {
+  text-transform: uppercase;
+  font-size: 1.1;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+@media (max-width: 1400px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form h3,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form h3,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form h3,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form h3 {
+    margin: 0.5rem 0;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing {
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem 0;
+  flex: 1;
+  margin-bottom: 60px;
+}
+@media (max-width: 1400px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress,
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing {
+    font-size: 0.9rem;
+    height: 440px;
+  }
+}
+@media (max-width: 840px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress,
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select {
+  width: 100px;
+  margin-top: 5px;
+  height: 35px;
+}
+@media (max-width: 600px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select {
+    width: 80px;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:hover, .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:focus,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:hover,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:focus,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:hover,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:focus,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:hover,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:focus,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:hover,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:focus,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:hover,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:focus,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:hover,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:focus,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:hover,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:focus,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:hover,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:focus,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:hover,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:focus,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:hover,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:focus,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:hover,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:focus,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div input:focus,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select:focus,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div input:focus,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select:focus {
+  background-color: #fff;
+  border: 1px solid #bbb;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-dates div select,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-dates div select {
+  text-align: center;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price {
+  width: 100%;
+  background-color: #f3f0ef;
+  line-height: 35px;
+  margin-top: 10px;
+  padding: 5px;
+  max-width: 500px;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items p,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price p,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items p,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price p,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items p,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price p,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items p,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price p,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items p,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price p,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items p,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price p,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-items p,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .checkout-total-price p,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-items p,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .checkout-total-price p {
+  display: flex;
+  justify-content: space-between;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-types,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-types,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-types,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-types,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-types,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-types,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-types,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-types {
+  display: flex;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-types input,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-types input,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-types input,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-types input,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-types input,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-types input,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-types input,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-types input {
+  width: 15px;
+  margin: 15px 0;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-types img,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-types img,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-types img,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-types img,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress .card-types img,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing .card-types img,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress .card-types img,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing .card-types img {
+  margin: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #bbb;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress label,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing label,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress label,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing label,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress label,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing label,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress label,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-top: 15px;
+}
+@media (max-width: 1400px) {
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress label,
+  .product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing label,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress label,
+  .product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing label,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress label,
+  .checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing label,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress label,
+  .checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing label {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input {
+  width: 250px;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  margin-top: 5px;
+  transition: all 0.5s ease;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input:hover,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input:hover,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input:hover,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input:hover,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input:hover,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input:hover,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input:hover {
+  background-color: #f69548;
+  outline: none;
+  border: 1px solid #f69548;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input:focus,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input:focus,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input:focus,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input:focus,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input:focus,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input:focus,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input:focus,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input:focus {
+  background-color: #f69548;
+  outline: none;
+  border: none;
+}
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input#zipCode,
+.product-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input#zipCode,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input#zipCode,
+.product-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input#zipCode,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-adress input#zipCode,
+.checkout-modal-layout .product-modal .checkout-form-container .checkout-form .checkout-billing input#zipCode,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-adress input#zipCode,
+.checkout-modal-layout .checkout-modal .checkout-form-container .checkout-form .checkout-billing input#zipCode {
+  width: 100px;
+}
+
 body .hero {
   position: relative;
   top: 5rem;
@@ -1721,6 +2422,12 @@ body .discount .discount-content form .discount-btn:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (max-height: 700px) {
+  .product-modal-layout .product-modal .product-image {
+    width: 450px;
+    height: 450px;
+  }
+}
 @media (max-height: 400px) {
   .product-modal-layout .product-modal .product-image {
     max-height: 250px;
@@ -1805,6 +2512,7 @@ body .discount .discount-content form .discount-btn:hover {
 @media (max-width: 500px) {
   .product-modal-layout .product-modal .product-modal-description .modal-btns button {
     align-self: center;
+    width: 13rem;
   }
 }
 .product-modal-layout .product-modal .product-modal-description .modal-btns .cart-btn {
@@ -2029,7 +2737,7 @@ body .discount .discount-content form .discount-btn:hover {
   display: block;
   width: 100%;
   text-align: center;
-  margin: 2rem;
+  margin: 2rem auto;
   font-size: 1.2rem;
   color: #f69548;
   font-weight: 600;

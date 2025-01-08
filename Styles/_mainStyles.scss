@@ -253,3 +253,403 @@ body {
     }
   }
 }
+
+.product-modal-layout,
+.checkout-modal-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1100;
+
+  .order-confirmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    border: 3px solid $primary-color;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    color: $primary-color;
+    background-color: $white-color;
+    position: relative;
+
+    @media (max-width: 420px) {
+      width: 90%;
+      font-size: 1.3rem;
+    }
+
+    i {
+      font-size: 4rem;
+      margin-top: 20px;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    .close-confirm {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      font-size: 2.5rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: $gray-color;
+      }
+    }
+  }
+
+  .product-modal,
+  .checkout-modal {
+    width: 1200px;
+    border: 3px solid $primary-color;
+    border-radius: 8px;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: $white-color;
+    position: relative;
+
+    @media (max-width: 1360px) {
+      width: 90%;
+    }
+
+    @media (max-height: 920px) {
+      max-height: 90%;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 820px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    @media (max-width: 600px) {
+      gap: 20px;
+    }
+
+    .close {
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      font-size: 2.5rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      color: $primary-color;
+
+      &:hover {
+        color: $gray-color;
+      }
+
+      @media (max-width: 820px) {
+        top: -12px;
+        right: 0;
+      }
+    }
+
+    .product-image {
+      width: 500px;
+      height: 500px;
+      object-fit: cover;
+
+      @media (max-height: 400px) {
+        max-height: 250px;
+      }
+
+      @media (max-width: 1200px) {
+        width: 450px;
+        height: 450px;
+      }
+      @media (max-width: 1024px) {
+        width: 400px;
+        height: 400px;
+      }
+      @media (max-width: 920px) {
+        width: 350px;
+        height: 350px;
+      }
+
+      @media (max-width: 820px) {
+        width: 100%;
+      }
+
+      @media (max-width: 600px) {
+        height: 300px;
+      }
+
+      @media (max-width: 500px) {
+        height: 250px;
+      }
+    }
+
+    .product-modal-description {
+      width: 45%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+
+      @media (max-width: 820px) {
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin-right: 1rem;
+      }
+
+      span {
+        color: $primary-color;
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin: 1.2rem 0;
+
+        @media (max-width: 920px) {
+          margin: 0.5rem 0;
+        }
+      }
+
+      .modal-btns {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 10px;
+
+        button {
+          width: 15rem;
+          height: 3rem;
+          border-radius: 8px;
+
+          @media (max-width: 500px) {
+            align-self: center;
+          }
+        }
+
+        .cart-btn {
+          border: 1px solid #bbb;
+          border-radius: 5px;
+          margin-top: 1rem;
+          padding: 15px 15px 15px 12px;
+          cursor: pointer;
+          color: $black-color;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #f3f0ef;
+          }
+        }
+      }
+    }
+    .checkout-form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+
+      @media (max-width: 1400px) {
+        padding: 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $primary-color;
+        text-transform: uppercase;
+
+        @media (max-width: 1400px) {
+          font-size: 1.1rem;
+        }
+      }
+
+      button {
+        width: 100%;
+        max-width: 500px;
+        padding: 10px 20px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $gray-color;
+          color: $white-color;
+        }
+      }
+
+      .checkout-form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @media (max-width: 900px) {
+          gap: 0px;
+        }
+
+        @media (max-width: 840px) {
+          flex-direction: column;
+        }
+
+        h3 {
+          text-transform: uppercase;
+          font-size: 1.1;
+          font-weight: 600;
+          margin: 1rem 0;
+
+          @media (max-width: 1400px) {
+            margin: 0.5rem 0;
+          }
+        }
+
+        .checkout-adress,
+        .checkout-billing {
+          height: 500px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 1rem 0;
+          flex: 1;
+          margin-bottom: 60px;
+
+          @media (max-width: 1400px) {
+            font-size: 0.9rem;
+            height: 440px;
+          }
+
+          @media (max-width: 840px) {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+          }
+
+          .card-dates {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            div {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              input,
+              select {
+                width: 100px;
+                margin-top: 5px;
+                height: 35px;
+
+                @media (max-width: 600px) {
+                  width: 80px;
+                }
+
+                &:hover,
+                &:focus {
+                  background-color: $white-color;
+                  border: 1px solid #bbb;
+                }
+              }
+
+              select {
+                text-align: center;
+              }
+            }
+          }
+
+          .checkout-total-items,
+          .checkout-total-price {
+            width: 100%;
+            background-color: #f3f0ef;
+            line-height: 35px;
+            margin-top: 10px;
+            padding: 5px;
+            max-width: 500px;
+            p {
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+
+          .card-types {
+            display: flex;
+
+            input {
+              width: 15px;
+              margin: 15px 0;
+            }
+
+            img {
+              margin: 10px;
+              width: 80px;
+              height: 40px;
+              border-radius: 5px;
+              box-shadow: 3px 3px 3px #bbb;
+            }
+          }
+
+          label {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-top: 15px;
+
+            @media (max-width: 1400px) {
+              font-size: 0.7rem;
+              margin-top: 10px;
+            }
+          }
+
+          input {
+            width: 250px;
+            height: 35px;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 2px;
+            margin-top: 5px;
+            transition: all 0.5s ease;
+
+            &:hover {
+              background-color: $primary-color;
+              outline: none;
+              border: 1px solid $primary-color;
+            }
+
+            &:focus {
+              background-color: $primary-color;
+              outline: none;
+              border: none;
+            }
+
+            &#zipCode {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

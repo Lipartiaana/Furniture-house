@@ -75,6 +75,76 @@
         </div>
       </nav>
     </header>
+    <div class="checkout-modal-layout hidden">
+      <div class="order-confirmed hidden">
+        <span class="close-confirm">&times;</span>
+        <p>ORDER CONFIRMED</p>
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <div class="checkout-modal">
+        <span class="close">&times;</span>
+        <div class="checkout-form-container">
+          <h2>Checkout</h2>
+          <form class="checkout-form">
+            <div class="checkout-adress">
+              <h3>Billing Adress</h3>
+              <label for="fullName">Full Name</label>
+              <input type="text" name="fullName" id="fullName" required />
+              <label for="adress">Adress</label>
+              <input type="text" name="adress" id="adress" required />
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" required />
+              <label for="zipCode">Zip code</label>
+              <input type="text" name="zipCode" id="zipCode" required />
+            </div>
+            <div class="checkout-billing">
+              <h3>Credit Card Info</h3>
+              <label for="paymentMethod">Payment method</label>
+              <div class="card-types">
+                <input type="radio" name="paymentMethod" id="mastercard" /><img
+                  src="../Assets/card-types/mastercard.jpg"
+                  alt="mastercard"
+                />
+                <input type="radio" name="paymentMethod" id="visa" />
+                <img src="../Assets/card-types/visa.jpg" alt="visa" />
+              </div>
+              <label for="cardNumber">Card number</label>
+              <input
+                type="text"
+                name="cardNumber"
+                id="cardNumber"
+                placeholder="0000 0000 0000 0000"
+                required
+              />
+              <label for="cardHolder">Card holder</label>
+              <input type="text" name="cardHolder" id="cardHolder" required />
+              <div class="card-dates">
+                <div>
+                  <label for="month-dropdown">Exp. Month:</label>
+                  <select id="month-dropdown" name="month" required></select>
+                </div>
+                <div>
+                  <label for="year-dropdown">Exp. Year:</label>
+                  <select id="year-dropdown" name="year" required></select>
+                </div>
+                <div class="cvv-div">
+                  <label for="cvv">CVV</label>
+                  <input type="text" name="cvv" id="cvv" required />
+                </div>
+              </div>
+              <div class="checkout-total-items">
+                <p><span>Total items (2)</span> <span>00.00$</span></p>
+                <p>Shipping price <span>00.00$</span></p>
+              </div>
+              <div class="checkout-total-price">
+                <p>Total Price <span>00.00$</span></p>
+              </div>
+              <button class="checkout-submit" type="submit">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="cart-container" style="min-height: 70vh">
       <div class="cart">
         <div class="cart-heading">
@@ -125,7 +195,7 @@
             <h5>total cost</h5>
             <h5 class="total-cost">000.00$</h5>
           </div>
-          <button class="checkout-btn">Checkout</button>
+          <button class="checkout-btn checkout-link">Checkout</button>
         </div>
       </div>
     </div>
@@ -168,5 +238,6 @@
       </div>
     </footer>
     <script type="module" src="../JS/cart.js"></script>
+    <script type="module" src="../JS/checkout.js"></script>
   </body>
 </html>
