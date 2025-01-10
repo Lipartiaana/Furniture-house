@@ -101,7 +101,12 @@
               <h3>Credit Card Info</h3>
               <label for="paymentMethod">Payment method</label>
               <div class="card-types">
-                <input type="radio" name="paymentMethod" id="mastercard" /><img
+                <input
+                  type="radio"
+                  name="paymentMethod"
+                  id="mastercard"
+                  required
+                /><img
                   src="../Assets/card-types/mastercard.jpg"
                   alt="mastercard"
                 />
@@ -114,6 +119,7 @@
                 name="cardNumber"
                 id="cardNumber"
                 placeholder="0000 0000 0000 0000"
+                minlength="16"
                 required
               />
               <label for="cardHolder">Card holder</label>
@@ -133,11 +139,16 @@
                 </div>
               </div>
               <div class="checkout-total-items">
-                <p><span>Total items (2)</span> <span>00.00$</span></p>
-                <p>Shipping price <span>00.00$</span></p>
+                <p>
+                  <span id="checkoutItemCount">Total items (2)</span>
+                  <span id="checkoutItemsPrice">00.00$</span>
+                </p>
+                <p>
+                  Shipping price <span id="checkoutShippingPrice">00.00$</span>
+                </p>
               </div>
               <div class="checkout-total-price">
-                <p>Total Price <span>00.00$</span></p>
+                <p>Total Price <span id="CheckoutTotalPrice">00.00$</span></p>
               </div>
               <button class="checkout-submit" type="submit">Continue</button>
             </div>
