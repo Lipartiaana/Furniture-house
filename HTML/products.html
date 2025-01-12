@@ -127,11 +127,11 @@
               >
                 <div class="accordion-body">
                   <ul>
-                    <li>Living Room</li>
-                    <li>Kitchen</li>
-                    <li>Bedroom</li>
-                    <li>Bathroom</li>
-                    <li>Office</li>
+                    <li class="ctegory-btn">Living Room</li>
+                    <li class="ctegory-btn">Kitchen</li>
+                    <li class="ctegory-btn">Bedroom</li>
+                    <li class="ctegory-btn">Bathroom</li>
+                    <li class="ctegory-btn">Office</li>
                   </ul>
                 </div>
               </div>
@@ -146,6 +146,7 @@
                   data-bs-target="#collapseFeatures"
                   aria-expanded="true"
                   aria-controls="collapseFeatures"
+                  data-category="features"
                 >
                   Features
                 </button>
@@ -161,6 +162,7 @@
                   data-bs-target="#collapseAll"
                   aria-expanded="true"
                   aria-controls="collapseAll"
+                  data-category="all"
                 >
                   All
                 </button>
@@ -169,6 +171,8 @@
           </div>
         </div>
         <div class="products-container-wrapper"></div>
+        <div id="emptyGridElem"></div>
+        <div class="pagination"></div>
       </div>
     </section>
     <footer class="footer-container">
@@ -211,5 +215,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../JS/products.js"></script>
+    <script type="module" src="../JS/pagination.js"></script>
   </body>
 </html>

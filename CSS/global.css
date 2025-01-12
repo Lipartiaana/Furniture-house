@@ -2352,6 +2352,29 @@ body .discount .discount-content form .discount-btn:hover {
 .products-container .products-container-content .products-container-wrapper a {
   cursor: pointer;
 }
+.products-container .products-container-content .pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.products-container .products-container-content .pagination .pagination-button {
+  font-size: 1.2rem;
+  width: 40px;
+  background-color: #f69548;
+  color: #fff;
+  padding: 8px 10px;
+  border: 5px double #fff;
+  border-radius: 6px;
+}
+.products-container .products-container-content .pagination .pagination-button:disabled {
+  background-color: #bbb;
+}
+.products-container .products-container-content .pagination .pagination-button.active {
+  background-color: #c26820;
+}
 
 .product-modal-layout {
   position: fixed;

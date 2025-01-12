@@ -107,6 +107,33 @@
         cursor: pointer;
       }
     }
+
+    .pagination {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      .pagination-button {
+        font-size: 1.2rem;
+        width: 40px;
+        background-color: $primary-color;
+        color: $white-color;
+        padding: 8px 10px;
+        border: 5px double $white-color;
+        border-radius: 6px;
+
+        &:disabled {
+          background-color: #bbb;
+        }
+
+        &.active {
+          background-color: $primary-color-dark;
+        }
+      }
+    }
   }
 }
 
