@@ -7,6 +7,28 @@ export let totalItems = 0;
 export let totalPages = 0;
 let currentCategory;
 
+window.addEventListener("popstate", async () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category") || "all";
+  const page = parseInt(urlParams.get("page")) || 1;
+
+  currentCategory = category;
+  currentPage = page;
+
+  await initializeProducts(currentCategory);
+});
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get("category") || "all";
+  const page = parseInt(urlParams.get("page")) || 1;
+
+  currentCategory = category;
+  currentPage = page;
+
+  await initializeProducts(currentCategory);
+});
+
 const productsContainerWrapper = document.querySelector(
   ".products-container-wrapper"
 );
@@ -109,6 +131,11 @@ async function updatePage() {
     const productList = await getProductList(currentCategory);
     renderProducts(productList);
     renderPagination();
+
+    const newUrl = new URL(window.location);
+    newUrl.searchParams.set("category", currentCategory);
+    newUrl.searchParams.set("page", currentPage);
+    window.history.pushState({}, "", newUrl);
   } catch (error) {
     console.error("Error updating page:", error);
     productsContainerWrapper.innerHTML = "<p>Failed to update products.</p>";
@@ -120,13 +147,13 @@ document.querySelectorAll(".category-btn").forEach((button) => {
   button.addEventListener("click", async () => {
     const category = button.dataset.category;
     currentPage = 1;
-    await initializeProducts(category);
+    window.location.href = `products.html?category=${category}`;
   });
 });
 
 document.querySelector(".feat").addEventListener("click", async () => {
   currentPage = 1;
-  await initializeProducts("feat");
+  window.location.href = `products.html?category=feat`;
 });
 
 function scrollToTop() {
@@ -135,5 +162,3 @@ function scrollToTop() {
     behavior: "smooth",
   });
 }
-
-initializeProducts("all");

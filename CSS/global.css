@@ -1423,6 +1423,14 @@ body .rooms .room .room-description h3 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+body .rooms .room .room-description a {
+  color: #c26820;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+body .rooms .room .room-description a:hover {
+  color: #f69548;
+}
 body .rooms .room .room-description p {
   width: 28rem;
   margin-bottom: 1rem;
@@ -1458,6 +1466,12 @@ body .features {
   body .features {
     padding: 0 0.2rem;
   }
+}
+body .features a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 10rem 0;
 }
 body .features .swiper {
   width: 100%;
@@ -1820,8 +1834,8 @@ body .recomendations .image-side img {
 }
 body .discount {
   width: 100%;
-  max-width: 1600px;
-  height: 25rem;
+  max-width: 1300px;
+  height: 22rem;
   position: relative;
   margin: 4rem auto;
 }
@@ -1835,6 +1849,11 @@ body .discount img {
   height: 100%;
   z-index: -2;
   border-radius: 1rem;
+}
+@media (max-width: 1300px) {
+  body .discount img {
+    border-radius: 0;
+  }
 }
 body .discount .discount-content {
   width: 50%;
