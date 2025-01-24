@@ -6,7 +6,7 @@ const kitchenLinks = document.querySelectorAll(".kitchen-link");
 function handleCategoryClick(links, category) {
   links.forEach((link) => {
     link.addEventListener("click", () => {
-      window.location.href = `./html/products.html?category=${category}`;
+      window.location.href = `./HTML/products.html?category=${category}`;
     });
   });
 }

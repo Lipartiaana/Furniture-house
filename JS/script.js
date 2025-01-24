@@ -36,9 +36,14 @@ export async function getProductList(category) {
 }
 
 export function createProduct(product) {
+  const isIndexPage =
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname === "/";
+  const imagePath = isIndexPage ? product.image : `.${product.image}`;
+
   return `<div class="product">
             <img
-              src=".${product.image}"
+              src="${imagePath}"
               alt="${product.name}"
             />
             <div class="product-text">
