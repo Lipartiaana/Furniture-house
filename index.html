@@ -84,7 +84,7 @@
             ><img src="./Assets/hero-images/bedroom.jpg" alt="bedroom" />
             <div class="overlay"></div>
             <div class="hero-text-container">
-              <h2>Bedroom</h2>
+              <h2 class="bedroom-link" data-category="Bedroom">Bedroom</h2>
             </div></span
           >
         </div>
@@ -93,7 +93,7 @@
             ><img src="./Assets/hero-images/office.jpg" alt="office" />
             <div class="overlay"></div>
             <div class="hero-text-container">
-              <h2>Office</h2>
+              <h2 class="office-link" data-category="Office">Office</h2>
             </div></span
           >
         </div>
@@ -105,7 +105,9 @@
             />
             <div class="overlay"></div>
             <div class="hero-text-container">
-              <h2>Living Room</h2>
+              <h2 class="living-room-link" data-category="Living Room">
+                Living Room
+              </h2>
             </div></span
           >
         </div>
@@ -114,7 +116,7 @@
             ><img src="./Assets/hero-images/kitchen.jpg" alt="kitchen" />
             <div class="overlay"></div>
             <div class="hero-text-container">
-              <h2>Kitchen</h2>
+              <h2 class="kitchen-link" data-category="Kitchen">Kitchen</h2>
             </div></span
           >
         </div>
@@ -218,7 +220,9 @@
             in. Tristique a tellus placerat ac eget. Enim nunc augue fringilla
             amet. Parturient ornare blandit fames auctor augue.
           </p>
-          <a href="#">See all products &#8594;</a>
+          <a class="living-room-link" data-category="Living Room"
+            >See all products &#8594;</a
+          >
         </div>
       </div>
       <div class="room">
@@ -229,7 +233,9 @@
             in. Tristique a tellus placerat ac eget. Enim nunc augue fringilla
             amet. Parturient ornare blandit fames auctor augue.
           </p>
-          <a href="#">See all products &#8594;</a>
+          <a class="bedroom-link" data-category="Living Room"
+            >See all products &#8594;</a
+          >
         </div>
         <div class="room-image">
           <img src="./Assets/rooms/bedroom.png" alt="bedroom" />
@@ -251,13 +257,15 @@
           <div class="image-border"></div>
         </div>
         <div class="room-description">
-          <h3>Dining Room</h3>
+          <h3>Kitchen</h3>
           <p>
             e. Ac consequat eget fusce nulla viverra. Nulla nibh massa mattis
             in. Tristique a tellus placerat ac eget. Enim nunc augue fringilla
             amet. Parturient ornare blandit fames auctor augue.
           </p>
-          <a href="#">See all products &#8594;</a>
+          <a class="kitchen-link" data-category="Living Room"
+            >See all products &#8594;</a
+          >
         </div>
       </div>
     </section>
@@ -276,6 +284,7 @@
         <div class="swiper-wrapper"></div>
         <div class="swiper-pagination"></div>
       </div>
+      <a href="./HTML/products.html"> <button class="btn">See More</button></a>
     </section>
     <section class="manufacturer">
       <div class="manufacturer-text">
@@ -454,5 +463,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="./JS/features.js"></script>
+    <script type="module" src="./JS/category-links.js"></script>
   </body>
 </html>

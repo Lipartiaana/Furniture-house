@@ -2,10 +2,10 @@ import { getProductList } from "./script.js";
 import { createProductLinks } from "./products.js";
 
 const itemsPerPage = 6; // Number of products per page
-let currentPage = 1;
-let totalItems = 0;
-let totalPages = 0;
-let currentCategory = "all"; // Default category
+export let currentPage = 1;
+export let totalItems = 0;
+export let totalPages = 0;
+let currentCategory;
 
 const productsContainerWrapper = document.querySelector(
   ".products-container-wrapper"
@@ -122,6 +122,11 @@ document.querySelectorAll(".category-btn").forEach((button) => {
     currentPage = 1;
     await initializeProducts(category);
   });
+});
+
+document.querySelector(".feat").addEventListener("click", async () => {
+  currentPage = 1;
+  await initializeProducts("feat");
 });
 
 function scrollToTop() {

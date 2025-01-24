@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-    <section class="products-container">
+    <section class="products-container" style="min-height: 85vh">
       <div class="products-container-header"><h4>Category name</h4></div>
       <div class="products-container-content">
         <div class="products-container-sidebar">
@@ -127,11 +127,19 @@
               >
                 <div class="accordion-body">
                   <ul>
-                    <li class="ctegory-btn">Living Room</li>
-                    <li class="ctegory-btn">Kitchen</li>
-                    <li class="ctegory-btn">Bedroom</li>
-                    <li class="ctegory-btn">Bathroom</li>
-                    <li class="ctegory-btn">Office</li>
+                    <li class="category-btn" data-category="Living Room">
+                      Living Room
+                    </li>
+                    <li class="category-btn" data-category="Kitchen">
+                      Kitchen
+                    </li>
+                    <li class="category-btn" data-category="Bedroom">
+                      Bedroom
+                    </li>
+                    <li class="category-btn" data-category="Bathroom">
+                      Bathroom
+                    </li>
+                    <li class="category-btn" data-category="Office">Office</li>
                   </ul>
                 </div>
               </div>
@@ -139,7 +147,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFeatures">
                 <button
-                  class="accordion-button without-ul"
+                  class="accordion-button without-ul feat"
                   id="sidebar-features-btn"
                   type="button"
                   data-bs-toggle="collapse"
@@ -155,7 +163,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingAll">
                 <button
-                  class="accordion-button without-ul active"
+                  class="accordion-button without-ul active category-btn"
                   id="sidebar-all-btn"
                   type="button"
                   data-bs-toggle="collapse"
@@ -216,5 +224,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script type="module" src="../JS/products.js"></script>
     <script type="module" src="../JS/pagination.js"></script>
+    <script type="module" src="../JS/category.js"></script>
   </body>
 </html>
